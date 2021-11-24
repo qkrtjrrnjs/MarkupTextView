@@ -25,11 +25,13 @@ and add `https://github.com/qkrtjrrnjs/MarkupTextView`.
 - **Implementation**
     ```swift
     let textView = MarkupTextView()
-    textView.placeholder = "Enter Text"
-    textView.font = UIFont.systemFont(ofSize: 20)
-    textView.drag = .always
-    textView.maxHeight = 100
-    textView.maxWidth = 100
+    textView.placeholder = "Enter Text"             // Default: "Text"
+    textView.placeholderColor = .systemGray         // Default: .black
+    textView.font = UIFont.systemFont(ofSize: 20) 
+    textView.borderColor = .systemGreen             // Default: .systemBlue
+    textView.drag = .always                         // Default: .always
+    textView.maxHeight = 250                        // Default: UIScreen.main.bounds.size.height
+    textView.maxWidth = 250                         // Default: UIScreen.main.bounds.size.width
     ```
 
 ## License
