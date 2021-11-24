@@ -4,6 +4,8 @@
 
 Dynamic textview with auto-resizing height & width that is also movable/draggable. 
 
+<img src="DEMO.gif" border=1 style="border-color:#eeeeee">
+
 ## Requirements
 iOS 13 or above
 
