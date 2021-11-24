@@ -11,7 +11,7 @@ iOS 13 or above
 MarkupTextView is installed via the official [Swift Package Manager](https://swift.org/package-manager/).  
 
 Select `Xcode`>`File`> `Swift Packages`>`Add Package Dependency...`  
-and add ``.
+and add `https://github.com/qkrtjrrnjs/MarkupTextView`.
 
 ## Usage
 
@@ -22,7 +22,7 @@ and add ``.
 
 - **Implementation**
     ```swift
-    let markupTextView = UITextView()
+    let markupTextView = MarkupTextView()
     markupTextView.placeholder = "Enter Text"
     markupTextView.font = UIFont.systemFont(ofSize: 20)
     markupTextView.drag = .always
