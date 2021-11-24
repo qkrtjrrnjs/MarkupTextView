@@ -13,6 +13,7 @@ public enum Drag {
     case whenEditing
 }
 
+@IBDesignable
 open class MarkupTextView: UITextView {
     
     private var heightConstraint: NSLayoutConstraint?
@@ -27,19 +28,29 @@ open class MarkupTextView: UITextView {
     
     open var drag: Drag = .always
     
-    open var borderColor: UIColor = .systemBlue
+    @IBInspectable open var borderColor: UIColor = .systemBlue
     
-    open var borderWidth: CGFloat = 1.0
+    @IBInspectable open var borderWidth: CGFloat = 1.0
     
-    open var maxWidth: CGFloat = UIScreen.main.bounds.size.width
+    @IBInspectable open var maxWidth: CGFloat = UIScreen.main.bounds.size.width {
+        didSet {
+            setNeedsLayout()
+            layoutIfNeeded()
+        }
+    }
 
-    open var maxHeight: CGFloat = UIScreen.main.bounds.size.height
+    @IBInspectable open var maxHeight: CGFloat = UIScreen.main.bounds.size.height {
+        didSet {
+            setNeedsLayout()
+            layoutIfNeeded()
+        }
+    }
     
-    open var placeholder: String = "Text" {
+    @IBInspectable open var placeholder: String = "Text" {
         didSet { setNeedsDisplay() }
     }
     
-    open var placeholderColor: UIColor = .black {
+    @IBInspectable open var placeholderColor: UIColor = .black {
         didSet { setNeedsDisplay() }
     }
     
