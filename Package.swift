@@ -22,8 +22,5 @@ let package = Package(
         .target(
             name: "MarkupTextView",
             dependencies: []),
-        .testTarget(
-            name: "MarkupTextViewTests",
-            dependencies: ["MarkupTextView"]),
     ]
 )
