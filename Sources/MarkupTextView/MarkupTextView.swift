@@ -32,19 +32,9 @@ open class MarkupTextView: UITextView {
     
     @IBInspectable open var borderWidth: CGFloat = 1.0
     
-    @IBInspectable open var maxWidth: CGFloat = UIScreen.main.bounds.size.width {
-        didSet {
-            setNeedsLayout()
-            layoutIfNeeded()
-        }
-    }
+    @IBInspectable open var maxWidth: CGFloat = UIScreen.main.bounds.size.width
 
-    @IBInspectable open var maxHeight: CGFloat = UIScreen.main.bounds.size.height {
-        didSet {
-            setNeedsLayout()
-            layoutIfNeeded()
-        }
-    }
+    @IBInspectable open var maxHeight: CGFloat = UIScreen.main.bounds.size.height
     
     @IBInspectable open var placeholder: String = "Text" {
         didSet { setNeedsDisplay() }
