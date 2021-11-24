@@ -22,12 +22,12 @@ and add `https://github.com/qkrtjrrnjs/MarkupTextView`.
 
 - **Implementation**
     ```swift
-    let markupTextView = MarkupTextView()
-    markupTextView.placeholder = "Enter Text"
-    markupTextView.font = UIFont.systemFont(ofSize: 20)
-    markupTextView.drag = .always
-    markupTextView.maxHeight = 100
-    markupTextView.maxWidth = 100
+    let textView = MarkupTextView()
+    textView.placeholder = "Enter Text"
+    textView.font = UIFont.systemFont(ofSize: 20)
+    textView.drag = .always
+    textView.maxHeight = 100
+    textView.maxWidth = 100
     ```
 
 ## License
