@@ -1,6 +1,6 @@
 # MarkupTextView
 
-![Swift Package Manager](https://img.shields.io/badge/swiftpm-compatible-green.svg) [![Language: Swift 5](https://img.shields.io/badge/language-swift%205-f48041.svg?style=flat)](https://developer.apple.com/swift) ![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)
+![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![Language: Swift 5](https://img.shields.io/badge/language-swift%205-f48041.svg?style=flat)](https://developer.apple.com/swift) ![Swift Package Manager](https://img.shields.io/badge/swiftpm-compatible-green.svg)
 
 Dynamic textview with auto-resizing height & width that is also movable/draggable. 
 
